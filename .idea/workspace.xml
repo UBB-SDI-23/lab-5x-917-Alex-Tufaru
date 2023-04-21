@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="923c899c-591e-4f2a-8096-1a3395f803b8" name="Changes" comment="enabled https" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.9.1-bin/apache-maven-3.9.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MvYaAdERQXsFVn4jsZJ0Otsg8a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tufar/Desktop/Faculty/Year 2/Semester 2/MPP/Labs/lab-5x-917-Alex-Tufaru/Backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;51af637aed604c1d5376026ae625111e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tufar\Desktop\Faculty\Year 2\Semester 2\MPP\Labs\Lab2\src\main\java\com\comics\comics" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tufar\Desktop\Faculty\Year 2\Semester 2\MPP\Labs\lab-5x-917-Alex-Tufaru\Backend" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Lab2Application">
+    <configuration name="Lab2ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comics.comics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.comics.comics" />
+      <option name="MAIN_CLASS_NAME" value="com.comics.comics.Lab2ApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab2ApplicationTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comics.comics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.comics.comics" />
+      <option name="MAIN_CLASS_NAME" value="com.comics.comics.Lab2ApplicationTests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="lab-4-917-Alex-Tufaru" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="lab-4-917-Alex-Tufaru" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="comics" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.comics.comics.Lab2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Lab2ApplicationTests" />
+        <item itemvalue="JUnit.Lab2ApplicationTests.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="923c899c-591e-4f2a-8096-1a3395f803b8" name="Changes" comment="" />
+      <created>1678649587137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678649587137</updated>
+      <workItem from="1678649587846" duration="11954000" />
+      <workItem from="1678698774556" duration="2593000" />
+      <workItem from="1679224251207" duration="8128000" />
+      <workItem from="1679306362710" duration="3354000" />
+      <workItem from="1679319793521" duration="56000" />
+      <workItem from="1679769256679" duration="1416000" />
+      <workItem from="1679829123350" duration="4357000" />
+      <workItem from="1679908012574" duration="10592000" />
+      <workItem from="1680110341180" duration="4297000" />
+      <workItem from="1680194928949" duration="1360000" />
+      <workItem from="1680198522219" duration="2618000" />
+      <workItem from="1680238779193" duration="2158000" />
+      <workItem from="1680267341572" duration="62000" />
+      <workItem from="1680463318162" duration="8183000" />
+      <workItem from="1680512820394" duration="7028000" />
+      <workItem from="1680795206522" duration="2548000" />
+      <workItem from="1680957563024" duration="4238000" />
+      <workItem from="1680980111144" duration="6556000" />
+      <workItem from="1681035144099" duration="5108000" />
+      <workItem from="1681040437906" duration="926000" />
+      <workItem from="1681056623931" duration="911000" />
+      <workItem from="1681116866686" duration="19000" />
+      <workItem from="1681117814189" duration="1217000" />
+      <workItem from="1681747645349" duration="1381000" />
+      <workItem from="1681749057729" duration="3615000" />
+      <workItem from="1681925574600" duration="1122000" />
+      <workItem from="1681998974475" duration="7350000" />
+      <workItem from="1682014983144" duration="374000" />
+      <workItem from="1682015406509" duration="521000" />
+      <workItem from="1682093717928" duration="266000" />
+    </task>
+    <task id="LOCAL-00001" summary="A3 done">
+      <created>1680114209914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680114209914</updated>
+    </task>
+    <task id="LOCAL-00002" summary="A3 done">
+      <created>1680114429083</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680114429083</updated>
+    </task>
+    <task id="LOCAL-00003" summary="tests done">
+      <created>1680474046382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680474046382</updated>
+    </task>
+    <task id="LOCAL-00004" summary="tests done">
+      <created>1680516172288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680516172288</updated>
+    </task>
+    <task id="LOCAL-00005" summary="tests done">
+      <created>1680517249834</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680517249834</updated>
+    </task>
+    <task id="LOCAL-00006" summary="tests done">
+      <created>1680960689520</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680960689520</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added CORS">
+      <created>1680961440197</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680961440197</updated>
+    </task>
+    <task id="LOCAL-00008" summary="changed server address">
+      <created>1680981345623</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680981345623</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added main class to pom.xml">
+      <created>1680982300824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680982300824</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added main class to pom.xml">
+      <created>1680983356196</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680983356196</updated>
+    </task>
+    <task id="LOCAL-00011" summary="changed port to 80">
+      <created>1680985479966</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680985479966</updated>
+    </task>
+    <task id="LOCAL-00012" summary="changed port to 8080">
+      <created>1680985649951</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680985649951</updated>
+    </task>
+    <task id="LOCAL-00013" summary="changed port to 80">
+      <created>1680986111482</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680986111482</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added validations">
+      <created>1680988863392</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680988863392</updated>
+    </task>
+    <task id="LOCAL-00015" summary="A4 done">
+      <created>1681040370339</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681040370339</updated>
+    </task>
+    <task id="LOCAL-00016" summary="A4 done">
+      <created>1681040590595</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681040590595</updated>
+    </task>
+    <task id="LOCAL-00017" summary="A4 done">
+      <created>1681056539801</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681056539801</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added swagger">
+      <created>1681926090683</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1681926090683</updated>
+    </task>
+    <task id="LOCAL-00019" summary="enabled https">
+      <created>1682013500512</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682013500512</updated>
+    </task>
+    <task id="LOCAL-00020" summary="enabled https">
+      <created>1682015638693</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682015638693</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="A3 done" />
+    <MESSAGE value="tests done" />
+    <MESSAGE value="added CORS" />
+    <MESSAGE value="changed server address" />
+    <MESSAGE value="added main class to pom.xml" />
+    <MESSAGE value="changed port to 8080" />
+    <MESSAGE value="changed port to 80" />
+    <MESSAGE value="added validations" />
+    <MESSAGE value="A4 done" />
+    <MESSAGE value="added swagger" />
+    <MESSAGE value="enabled https" />
+    <option name="LAST_COMMIT_MESSAGE" value="enabled https" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="jakarta.validation.NoProviderFoundException" package="jakarta.validation" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.TypeNotPresentException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="org.springframework.context.ApplicationContextException" package="org.springframework.context" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.security.InvalidAlgorithmParameterException" package="java.security" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
