@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:80")
+@CrossOrigin
 @RequestMapping("/api/comics")
 public class ComicsController {
     private final ComicsCollectionRepo repo;
@@ -24,11 +24,11 @@ public class ComicsController {
     }
 
     @GetMapping("")
-    public List<Integer> findAll() {
-        List<Integer> IdList = new ArrayList<>();
-        for (Comic c : repo.findAll())
-            IdList.add(c.getId());
-        return IdList;
+    public List<Comic> findAll() {
+//        List<Integer> IdList = new ArrayList<>();
+//        for (Comic c : repo.findAll())
+//            IdList.add(c.getId());
+        return repo.findAll();
     }
 
     @GetMapping("/{id}")
