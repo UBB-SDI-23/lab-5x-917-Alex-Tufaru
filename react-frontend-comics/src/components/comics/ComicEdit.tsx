@@ -10,7 +10,6 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Comic } from "../../models/Comic";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import axios from "axios";
 
 export const ComicEdit = () => {
   const { comicId } = useParams();

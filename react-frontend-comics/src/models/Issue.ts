@@ -1,4 +1,4 @@
-import { Comic } from "./comic";
+import { Comic } from "./Comic";
 
 export interface Issue {
   id: number;
