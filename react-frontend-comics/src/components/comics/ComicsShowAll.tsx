@@ -10,6 +10,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  TableSortLabel,
   Tooltip,
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
@@ -18,7 +19,9 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { Link } from "react-router-dom";
 
-export const ComicsShowAll = () => {
+export const ComicsShowAll = (props: any) => {
+  const { valueToOrderBy, orderDirection, handleRequestSort } = props;
+
   const [comics, setComics] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -35,6 +38,10 @@ export const ComicsShowAll = () => {
         setLoading(false);
       });
   }, []);
+
+  const createSortHandler = (property: string) => (event: any) => {
+    handleRequestSort(event, property);
+  };
 
   return (
     <Container>
@@ -55,7 +62,16 @@ export const ComicsShowAll = () => {
               <TableRow>
                 <TableCell>#</TableCell>
                 <TableCell align="right">Name</TableCell>
-                <TableCell align="right">Issues Number</TableCell>
+                <TableCell align="right" key="issuesNr">
+                  <TableSortLabel
+                    active={valueToOrderBy === "issuesNr"}
+                    direction={
+                      valueToOrderBy == "issuesNr" ? orderDirection : "asc"
+                    }
+                    onClick={createSortHandler("issuesNr")}
+                  ></TableSortLabel>
+                  Issues Number
+                </TableCell>
                 <TableCell align="right">Author</TableCell>
                 <TableCell align="right">Publisher</TableCell>
               </TableRow>
