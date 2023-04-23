@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface ComicsCollectionRepo extends JpaRepository<Comic, Integer> {
     @Query("FROM Comic WHERE issuesNr > ?1")
-    public List<Comic> filterByIssuesNr(Integer nr);
+    List<Comic> filterByIssuesNr(Integer nr);
 }
