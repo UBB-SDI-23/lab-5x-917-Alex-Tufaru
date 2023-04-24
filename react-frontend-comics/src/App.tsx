@@ -10,7 +10,6 @@ import { ComicAdd } from "./components/comics/ComicAdd";
 import { ComicEdit } from "./components/comics/ComicEdit";
 import { ComicFilterChooseNumber } from "./components/comics/ComicFilterChooseNumber";
 import { ComicFilter } from "./components/comics/ComicFilter";
-import { TableContent } from "./components/TableContent/TableContent";
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
         <AppMenu />
         <Routes>
           <Route path="/" element={<AppHome />} />
-          <Route path="/comics" element={<TableContent />} />
+          <Route path="/comics" element={<ComicsShowAll />} />
           <Route path="/comics/:comicId/details" element={<ComicDetails />} />
           <Route path="/comics/:comicId/edit" element={<ComicEdit />} />
           <Route path="/comics/:comicId/delete" element={<ComicDelete />} />

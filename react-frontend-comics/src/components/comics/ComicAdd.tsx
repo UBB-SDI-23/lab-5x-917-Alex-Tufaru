@@ -10,6 +10,7 @@ import {
   TextField,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { BACKEND_API_URL } from "../../constants";
 
 export const ComicAdd = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ export const ComicAdd = () => {
   });
   const addComic = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    fetch(`http://127.0.0.1:80/api/comics`, {
+    fetch(`${BACKEND_API_URL}/comics`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",

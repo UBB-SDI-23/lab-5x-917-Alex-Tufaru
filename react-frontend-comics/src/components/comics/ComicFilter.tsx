@@ -17,6 +17,7 @@ import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { Link, useParams } from "react-router-dom";
+import { BACKEND_API_URL } from "../../constants";
 
 export const ComicFilter = () => {
   const { nr } = useParams();
@@ -25,7 +26,7 @@ export const ComicFilter = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://127.0.0.1:80/api/comics/filter/${nr}`, {
+    fetch(`${BACKEND_API_URL}/comics/filter/${nr}`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },

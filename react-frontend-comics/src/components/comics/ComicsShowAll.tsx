@@ -18,16 +18,18 @@ import ReadMoreIcon from "@mui/icons-material/ReadMore";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { Link } from "react-router-dom";
+import { Comic } from "../../models/Comic";
+import { BACKEND_API_URL } from "../../constants";
 
-export const ComicsShowAll = (props: any) => {
-  const { valueToOrderBy, orderDirection, handleRequestSort } = props;
-
-  const [comics, setComics] = useState([]);
+export const ComicsShowAll = () => {
+  const [comics, setComics] = useState<Comic[]>([]);
   const [loading, setLoading] = useState(false);
+  const [valueToOrderBy] = useState("issuesNr");
+  const [orderDirection, setOrderDirection] = useState<"asc" | "desc">("asc");
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://127.0.0.1:80/api/comics", {
+    fetch(`${BACKEND_API_URL}/comics`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
@@ -39,8 +41,13 @@ export const ComicsShowAll = (props: any) => {
       });
   }, []);
 
-  const createSortHandler = (property: string) => (event: any) => {
-    handleRequestSort(event, property);
+  const createSortHandler = () => {
+    setOrderDirection(orderDirection === "asc" ? "desc" : "asc");
+    if (orderDirection == "asc") {
+      comics.sort((a, b) => a.issuesNr - b.issuesNr);
+    } else {
+      comics.sort((b, a) => a.issuesNr - b.issuesNr);
+    }
   };
 
   return (
@@ -65,10 +72,8 @@ export const ComicsShowAll = (props: any) => {
                 <TableCell align="right" key="issuesNr">
                   <TableSortLabel
                     active={valueToOrderBy === "issuesNr"}
-                    direction={
-                      valueToOrderBy == "issuesNr" ? orderDirection : "asc"
-                    }
-                    onClick={createSortHandler("issuesNr")}
+                    direction={orderDirection}
+                    onClick={() => createSortHandler()}
                   ></TableSortLabel>
                   Issues Number
                 </TableCell>
@@ -77,67 +82,56 @@ export const ComicsShowAll = (props: any) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {comics.map(
-                (
-                  comic: {
-                    id: any;
-                    name: any;
-                    issuesNr: any;
-                    author: any;
-                    publisher: any;
-                  },
-                  index: number
-                ) => (
-                  <TableRow key={comic.id}>
-                    <TableCell component="th" scope="row">
-                      {index + 1}
-                    </TableCell>
-                    <TableCell component="th" scope="row">
-                      <Link
-                        to={`/comics/${comic.id}/details`}
-                        title="View comics details"
-                      >
-                        {comic.name}
-                      </Link>
-                    </TableCell>
-                    <TableCell align="right" scope="row">
-                      {comic.issuesNr}
-                    </TableCell>
-                    <TableCell align="right" scope="row">
-                      {comic.author}
-                    </TableCell>
-                    <TableCell align="right" scope="row">
-                      {comic.publisher}
-                    </TableCell>
-                    <TableCell align="right">
-                      <IconButton
-                        component={Link}
-                        sx={{ mr: 3 }}
-                        to={`/comics/${comic.id}/details`}
-                      >
-                        <Tooltip title="View comic details" arrow>
-                          <ReadMoreIcon color="primary" />
-                        </Tooltip>
-                      </IconButton>
-                      <IconButton
-                        component={Link}
-                        sx={{ mr: 3 }}
-                        to={`/comics/${comic.id}/edit`}
-                      >
-                        <EditIcon />
-                      </IconButton>
+              {comics.map((comic: Comic, index: number) => (
+                <TableRow key={comic.id}>
+                  <TableCell component="th" scope="row">
+                    {index + 1}
+                  </TableCell>
+                  <TableCell component="th" scope="row">
+                    <Link
+                      to={`/comics/${comic.id}/details`}
+                      title="View comics details"
+                    >
+                      {comic.name}
+                    </Link>
+                  </TableCell>
+                  <TableCell align="right" scope="row">
+                    {comic.issuesNr}
+                  </TableCell>
+                  <TableCell align="right" scope="row">
+                    {comic.author}
+                  </TableCell>
+                  <TableCell align="right" scope="row">
+                    {comic.publisher}
+                  </TableCell>
+                  <TableCell align="right">
+                    <IconButton
+                      component={Link}
+                      sx={{ mr: 3 }}
+                      to={`/comics/${comic.id}/details`}
+                    >
+                      <Tooltip title="View comic details" arrow>
+                        <ReadMoreIcon color="primary" />
+                      </Tooltip>
+                    </IconButton>
+                    <IconButton
+                      component={Link}
+                      sx={{ mr: 3 }}
+                      to={`/comics/${comic.id}/edit`}
+                    >
+                      <EditIcon />
+                    </IconButton>
 
-                      <IconButton
-                        component={Link}
-                        sx={{ mr: 3 }}
-                        to={`/comics/${comic.id}/delete`}
-                      >
-                        <DeleteForeverIcon sx={{ color: "red" }} />
-                      </IconButton>
-                    </TableCell>
-                  </TableRow>
-                )
-              )}
+                    <IconButton
+                      component={Link}
+                      sx={{ mr: 3 }}
+                      to={`/comics/${comic.id}/delete`}
+                    >
+                      <DeleteForeverIcon sx={{ color: "red" }} />
+                    </IconButton>
+                  </TableCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </TableContainer>

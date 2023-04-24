@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Comic } from "../../models/Comic";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { BACKEND_API_URL } from "../../constants";
 
 export const ComicEdit = () => {
   const { comicId } = useParams();
@@ -21,7 +22,7 @@ export const ComicEdit = () => {
     publisher: "",
   });
   useEffect(() => {
-    fetch(`http://127.0.0.1:80/api/comics/${comicId}`, {
+    fetch(`${BACKEND_API_URL}/api/comics/${comicId}`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },

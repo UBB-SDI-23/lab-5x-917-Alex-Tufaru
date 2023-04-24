@@ -11,13 +11,14 @@ import {
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import { BACKEND_API_URL } from "../../constants";
 
 export const ComicDetails = () => {
   const { comicId } = useParams();
   const [comic, setComic] = useState<Comic>();
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:80/api/comics/${comicId}`, {
+    fetch(`${BACKEND_API_URL}/comics/${comicId}`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },

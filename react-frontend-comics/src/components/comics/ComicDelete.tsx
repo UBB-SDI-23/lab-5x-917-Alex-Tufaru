@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { BACKEND_API_URL } from "../../constants";
 
 export const ComicDelete = () => {
   const { comicId } = useParams();
@@ -15,7 +16,7 @@ export const ComicDelete = () => {
 
   const handleDelete = (event: { preventDefault: () => void }) => {
     event.preventDefault();
-    fetch(`http://127.0.0.1:80/api/comics/${comicId}`, {
+    fetch(`${BACKEND_API_URL}/comics/${comicId}`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
