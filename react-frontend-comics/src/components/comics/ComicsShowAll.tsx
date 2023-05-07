@@ -19,7 +19,6 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import { Link } from "react-router-dom";
 import { Comic } from "../../models/Comic";
-import { BACKEND_API_URL } from "../../constants";
 
 export const ComicsShowAll = () => {
   const [comics, setComics] = useState<Comic[]>([]);
@@ -29,7 +28,7 @@ export const ComicsShowAll = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${BACKEND_API_URL}/comics`, {
+    fetch(`34.88.117.38/api/comics`, {
       headers: {
         "Access-Control-Allow-Origin": "*",
       },
