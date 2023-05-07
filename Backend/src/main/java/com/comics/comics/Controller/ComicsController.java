@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:80")
+@CrossOrigin
 @RequestMapping("/api/comics")
 public class ComicsController {
     private final ComicsCollectionRepo comicsRepo;
