@@ -15,10 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:80")
 @RequestMapping("/api/comics")
 public class ComicsController {
-    private static Session session;
     private final ComicsCollectionRepo comicsRepo;
     private final IssuesCollectionRepo issuesRepo;
     private final Service service;
