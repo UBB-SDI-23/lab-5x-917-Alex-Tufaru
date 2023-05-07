@@ -1,4 +1,4 @@
-const PROD_BACKEND_API_URL = "https://sdi-2023-example.strangled.net/api";
+const PROD_BACKEND_API_URL = "ec2-13-53-44-200.eu-north-1.compute.amazonaws.com/api";
 const DEV_BACKEND_API_URL = "http://127.0.0.1:80/api";
 
 export const BACKEND_API_URL =
