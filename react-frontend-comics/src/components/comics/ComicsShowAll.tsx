@@ -52,7 +52,7 @@ export const ComicsShowAll = () => {
 
   return (
     <Container>
-      <h1>All comics</h1>
+      <h1>All comics <b>{BACKEND_API_URL}</b></h1>
       {loading && <CircularProgress />}
       {!loading && comics.length === 0 && <p>No comics found</p>}
       {!loading && (
