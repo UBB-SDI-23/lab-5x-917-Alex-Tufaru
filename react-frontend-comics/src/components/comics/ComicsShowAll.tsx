@@ -31,7 +31,7 @@ export const ComicsShowAll = () => {
     setLoading(true);
     fetch(`${BACKEND_API_URL}/comics`, {
       headers: {
-        "Access-Control-Allow-Origin": "*",
+        // "Access-Control-Allow-Origin": "*",
       },
     })
       .then((response) => response.json())
